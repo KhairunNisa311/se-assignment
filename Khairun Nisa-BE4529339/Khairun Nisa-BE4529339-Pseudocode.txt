@@ -1,0 +1,40 @@
+Pseudocode online food ordering process
+
+START
+Declare variables 
+READ ADN WRITE "email" with string
+READ ADN WRITE "username" with string
+READ ADN WRITE	"password" with string
+READ ADN WRITE	"noHP" with number
+READ ADN WRITE	"alamat" with string
+READ ADN WRITE	"nama_makanan" with string
+READ ADN WRITE	"total_order" with number
+
+OPEN app
+   HAVE account?
+      IF have
+        login account 
+        WRITE email, password, username, noHp, alamat
+      ELSE
+        sign up account
+        WRITE username, password 
+
+    THEN
+       WRITE "nama_makanan" 
+       CHOOSE ordered food
+           IF food is suitabel 
+	      SHOW total price
+           ELSE 
+	      CHOOSE ordered food
+
+    THEN 
+	CHOOSE payment method
+           IF use e-wallet
+              PROSESS order
+           ELSE
+              Cash 
+	   PROSESS order
+
+        WAITING FOR order to arrive
+
+END
